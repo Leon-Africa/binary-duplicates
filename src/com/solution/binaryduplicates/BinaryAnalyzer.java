@@ -80,11 +80,10 @@ public class BinaryAnalyzer {
         //Numbers to duplicate files
         holdFileNums.add(x);
 
-        //Convert to Array 
-        for (List<Integer> ls : holdFileNums) {
+        //Convert to Array
+        holdFileNums.stream().forEach((ls) -> {
             obj = ls.toArray();
-
-        }
+        });
 
         //Create Log File
         if(watch == true){
@@ -180,7 +179,7 @@ public class BinaryAnalyzer {
 
             // Log the message to the file 
             for (int h = 0; h < array.length; h++) {
-                logger.info("file_000" + array[h] + " is a duplicate of " + "file_000" + array[h + 1]);
+                logger.log(Level.INFO,"file_000{0}" + " is a duplicate of " + "file_000{1}", new Object[]{array[h], array[h + 1]});
                 h = h + 1;
             }
 
