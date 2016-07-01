@@ -29,7 +29,7 @@ Alternatively use typical Java compilation, that is:<br>
 <strong>IMPROVEMENTS:</strong><br>
 <i>1. File naming pattern should be irrelevant concerning construction of log file.</i> i.e The program should be able to print out the names of the files even if the files have miscellaneous names with no associated pattern<br>
 <i>2. Delete one of the duplicates out of each pair.</i><br>
-<i>3. Extend the Formatter class and @overide methods to remove class name from log file.</i> i.e Create a custom Formatter. Note: Currently this is required if you want to prevent the package name from being displayed in the log file as SimpleFormatter(Java 8) persists the package and method name in the log file. Ofcourse assuming you use java.util.logging.Logger for logging purposes.<br>
+<i>3. Extend the Formatter class and @overide methods to remove class name from log file.</i> i.e Create a custom Formatter. Note: Currently this is required if you want to prevent the package name from being displayed in the log file as SimpleFormatter(Java 8) persists the package and method name in the log file. Ofcourse assuming you are using java.util.logging.Logger for logging purposes.<br>
 
 Fork to contribute to suggested improvements.
 
